@@ -12,7 +12,7 @@ public class CreateBinaryTree {
     }
 
     public static TreeNode createBinaryTree(int[] pre, int preSta, int preEnd, int[] in, int inSta, int inEnd){
-        if (preSta>preEnd||inSta>inEnd){
+        if (preSta>preEnd|| inSta>inEnd){
             return null;
         }
         TreeNode root = new TreeNode(pre[preSta]);
@@ -29,14 +29,3 @@ public class CreateBinaryTree {
     }
 }
 
-
-class TreeNode{
-    int value;
-    TreeNode leftNode;
-    TreeNode rightNode;
-    public TreeNode(int value){
-        this.value = value;
-        leftNode = null;
-        rightNode = null;
-    }
-}
